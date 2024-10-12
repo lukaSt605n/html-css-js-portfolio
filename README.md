@@ -37,12 +37,6 @@ Hello! I’m Lukas Sivak, a Frontend Developer originally from the Czech Republi
 - **Live Demo**: [link-to-your-project]
 - **Source Code**: [GitHub repository link]
 
-## Contact
-Feel free to reach out to me through the following platforms:
-- **LinkedIn**: [Your LinkedIn URL]
-- **GitHub**: [Your GitHub URL]
-- **Email**: [Your email address]
-
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
