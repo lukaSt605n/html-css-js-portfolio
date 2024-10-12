@@ -27,12 +27,12 @@ Hello! I’m Lukas Sivak, a Frontend Developer originally from the Czech Republi
 - **Live Demo**: [link-to-your-portfolio]
 - **Source Code**: [GitHub repository link]
 
-### 2. [Another Project Name]
+### 2. 
 - **Description**: [Brief description of the project]
 - **Live Demo**: [link-to-your-project]
 - **Source Code**: [GitHub repository link]
 
-### 3. [Another Project Name]
+### 3. 
 - **Description**: [Brief description of the project]
 - **Live Demo**: [link-to-your-project]
 - **Source Code**: [GitHub repository link]
