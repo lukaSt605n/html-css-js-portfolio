@@ -19,16 +19,23 @@ Hello! I’m Lukas Sivak, a Frontend Developer originally from the Czech Republi
 - Git & GitHub
 - Responsive Design
 - Flexbox & Grid Layout
+- [Any additional technologies or tools you use]
 
 ## Projects
 ### 1. Portfolio Website
-
+- **Description**: A personal portfolio to showcase my projects and skills as a frontend developer.
+- **Live Demo**: [link-to-your-portfolio]
+- **Source Code**: [GitHub repository link]
 
 ### 2. 
-
+- **Description**: [Brief description of the project]
+- **Live Demo**: [link-to-your-project]
+- **Source Code**: [GitHub repository link]
 
 ### 3. 
-
+- **Description**: [Brief description of the project]
+- **Live Demo**: [link-to-your-project]
+- **Source Code**: [GitHub repository link]
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
