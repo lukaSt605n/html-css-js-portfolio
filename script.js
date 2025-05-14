@@ -29,3 +29,14 @@ nextBtn.addEventListener('click', () => {
 });
 
 showImage(currentIndex);
+const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  // Optionally change button text/icon
+  if (document.body.classList.contains("dark-mode")) {
+    toggleBtn.innerHTML = "☀️ Light Mode";
+  } else {
+    toggleBtn.innerHTML = "🌙 Dark Mode";
+  }
+});
