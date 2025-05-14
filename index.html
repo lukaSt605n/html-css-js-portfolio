@@ -31,12 +31,12 @@
         <span></span>
         <span></span>
       </div>
-      <div class="menu-links">
+      <ul class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
         <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
+      </ul>
     </div>
   </nav>
 
@@ -53,7 +53,7 @@
         <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
       </div>
       <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https:https:https://www.linkedin.com/feed/'" />
+        <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/feed/'" />
         <img src="./assets/github.png" alt="Github profile" class="icon" onclick="location.href='https://github.com/lukaSt605n'" />
       </div>
     </div>
@@ -65,7 +65,7 @@
     <h1 class="title">About Me</h1>
     <div class="section-container">
       <div class="section__pic-container">
-        <img src="./Assets/about.png1.png" alt="About picture" class="about-pic" />
+        <img src="./assets/about.png1.png" alt="About picture" class="about-pic" />
       </div>
       <div class="about-details-container">
         <div class="about-containers">
@@ -82,18 +82,15 @@
         </div>
         <div class="text-container">
           <p>
-            Hi, I’m Lukas Sivak — a frontend developer based in London.
-            <br><br>
-            I specialize in building clean, responsive websites using HTML, CSS, and JavaScript. My focus is on simple, effective design with a smooth user experience.
-            <br><br>
-            I recently completed my first real client project — a custom portfolio site for a film composer — and I’m currently available for freelance work.
-            <br><br>
+            Hi, I’m Lukas Sivak — a frontend developer based in London.<br><br>
+            I specialize in building clean, responsive websites using HTML, CSS, and JavaScript. My focus is on simple, effective design with a smooth user experience.<br><br>
+            I recently completed my first real client project — a custom portfolio site for a film composer — and I’m currently available for freelance work.<br><br>
             I’m self-taught and continuing to grow my skills through hands-on projects and focused learning. If you’re looking for a developer who’s practical, detail-oriented, and easy to work with — let’s talk.
           </p>
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
   </section>
 
   <!-- Experience Section -->
@@ -121,64 +118,47 @@
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
   </section>
 
-<section id="projects">
-  <p class="section__text__p1">Browse My Recent</p>
-  <h1 class="title">Projects</h1>
-  <div class="experience-details-container">
-    <div class="about-containers">
-      <div class="details-container color-container">
-
-        <!-- Image Carousel -->
-        <div class="carousel">
-          <button class="carousel-btn prev">&#10094;</button>
-          <div class="carousel-images">
-        <img src="./assets/Project1-Template/Welcome1.png" class="carousel-img active" alt="musicFolio - Hero Section" />
-        <img src="./assets/Project1-Template/About1.png" class="carousel-img" alt="musicFolio - About Section" />
-        <img src="./assets/Project1-Template/Gallery1.png" class="carousel-img" alt="musicFolio - Media Section" />
-        <img src="./assets/Project1-Template/Orchestation.png" class="carousel-img" alt="musicFolio - Orchestration Example" />
-        <img src="./assets/Project1-Template/Contact1.png" class="carousel-img" alt="musicFolio - Contact Section" />
+  <!-- Projects Section -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="carousel">
+            <button class="carousel-btn prev">&#10094;</button>
+            <div class="carousel-images">
+              <img src="./assets/Project1-Template/Welcome1.png" class="carousel-img active" alt="musicFolio - Hero Section" />
+              <img src="./assets/Project1-Template/About1.png" class="carousel-img" alt="musicFolio - About Section" />
+              <img src="./assets/Project1-Template/Gallery1.png" class="carousel-img" alt="musicFolio - Media Section" />
+              <img src="./assets/Project1-Template/Orchestation.png" class="carousel-img" alt="musicFolio - Orchestration Example" />
+              <img src="./assets/Project1-Template/Contact1.png" class="carousel-img" alt="musicFolio - Contact Section" />
+            </div>
+            <button class="carousel-btn next">&#10095;</button>
           </div>
-          <button class="carousel-btn next">&#10095;</button>
-        </div>
 
-        <h2 class="experience-sub-title project-title">musicFolio Template</h2>
-        <p style="text-align:center; padding: 0 1rem;">
-          A modular portfolio website template built for musicians, composers, and creatives.  
-          Built with HTML, CSS, and JavaScript — supports embedded YouTube, Spotify, SoundCloud, and self-hosted MP3/MP4.  
-          Fully responsive and beginner-friendly.
-        </p>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lukaSt605n/musicFolio'">GitHub</button>
-          <button class="btn btn-color-2 project-btn" onclick="location.href='https://musicfolio.netlify.app'">Live Demo</button>
-          <button class="btn btn-color-1 project-btn" onclick="location.href='https://bylukas.gumroad.com/l/xbiyf?_gl=1*g22xnh*_ga*MTAxMjk2ODMyOS4xNzQ3MTI0Nzk2*_ga_6LJN6D94N6*czE3NDcyMzUxNDAkbzUkZzEkdDE3NDcyMzYxODgkajAkbDAkaDA.'">Buy Template</button>
-        </div>
-        <!-- Website Links Section -->
-        <div class="website-links" style="margin-top:1.5rem; text-align:center;">
-          <h3 style="margin-bottom:0.5rem;">Links</h3>
-          <ul style="list-style:none; padding:0; margin:0;">
-        <li>
-          <a href="https://musicfolio.netlify.app" target="_blank" rel="noopener" style="color:#0077cc; text-decoration:underline;">
-          Visit Website
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/lukaSt605n/musicFolio" target="_blank" rel="noopener" style="color:#0077cc; text-decoration:underline;">
-          View Source on GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://bylukas.gumroad.com/l/xbiyf?_gl=1*g22xnh*_ga*MTAxMjk2ODMyOS4xNzQ3MTI0Nzk2*_ga_6LJN6D94N6*czE3NDcyMzUxNDAkbzUkZzEkdDE3NDcyMzYxODgkajAkbDAkaDA." target="_blank" rel="noopener" style="color:#0077cc; text-decoration:underline;">
-          Buy Template
-          </a>
-        </li>
-          </ul>
+          <h2 class="experience-sub-title project-title">musicFolio Template</h2>
+          <p style="text-align:center; padding: 0 1rem;">
+            A modular portfolio website template built for musicians, composers, and creatives.  
+            Built with HTML, CSS, and JavaScript — supports embedded YouTube, Spotify, SoundCloud, and self-hosted MP3/MP4.  
+            Fully responsive and beginner-friendly.
+          </p>
+
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lukaSt605n/musicFolio'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://musicfolio.netlify.app'">Live Demo</button>
+            <button class="btn btn-color-1 project-btn" onclick="location.href='https://bylukas.gumroad.com/l/xbiyf'">Buy Template</button>
+          </div>
+
+
         </div>
       </div>
+    </div>
+  </section>
 
-  
   <!-- Contact Section -->
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
