@@ -1,10 +1,12 @@
+// 🍔 Hamburger Menu Toggle
 function toggleMenu() {
-    const menu = document.querySelector('.menu-links');
-    const icon = document.querySelector('.hamburger-icon');
-    menu.classList.toggle('open');
-    icon.classList.toggle('open');
+  const menu = document.querySelector('.menu-links');
+  const icon = document.querySelector('.hamburger-icon');
+  menu.classList.toggle('open');
+  icon.classList.toggle('open');
 }
 
+// 🎠 Image Carousel Logic
 const carouselImages = document.querySelectorAll('.carousel-img');
 const prevBtn = document.querySelector('.carousel-btn.prev');
 const nextBtn = document.querySelector('.carousel-btn.next');
@@ -28,15 +30,26 @@ nextBtn.addEventListener('click', () => {
   showImage(currentIndex);
 });
 
-showImage(currentIndex);
+showImage(currentIndex); // Initialize on load
+
+// 🌙 Dark Mode Toggle
 const toggleBtn = document.getElementById("theme-toggle");
 
+const THEMES = {
+  LIGHT_MODE: { emoji: "☀️", text: "Light Mode" },
+  DARK_MODE: { emoji: "🌙", text: "Dark Mode" },
+};
+
+// Optional: Apply saved theme on load
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+  toggleBtn.innerHTML = `${THEMES.LIGHT_MODE.emoji} ${THEMES.LIGHT_MODE.text}`;
+}
+
 toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-  // Optionally change button text/icon
-  if (document.body.classList.contains("dark-mode")) {
-    toggleBtn.innerHTML = "☀️ Light Mode";
-  } else {
-    toggleBtn.innerHTML = "🌙 Dark Mode";
-  }
+  const isDark = document.body.classList.toggle("dark-mode");
+  toggleBtn.innerHTML = isDark
+    ? `${THEMES.LIGHT_MODE.emoji} ${THEMES.LIGHT_MODE.text}`
+    : `${THEMES.DARK_MODE.emoji} ${THEMES.DARK_MODE.text}`;
+  localStorage.setItem("theme", isDark ? "dark" : "light");
 });
