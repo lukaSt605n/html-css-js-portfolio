@@ -6,31 +6,32 @@ function toggleMenu() {
   icon.classList.toggle('open');
 }
 
-// 🎠 Image Carousel Logic
-const carouselImages = document.querySelectorAll('.carousel-img');
-const prevBtn = document.querySelector('.carousel-btn.prev');
-const nextBtn = document.querySelector('.carousel-btn.next');
+// 🎠 Image Carousel Logic (supports multiple carousels)
+document.querySelectorAll('.carousel').forEach((carousel) => {
+  const images = carousel.querySelectorAll('.carousel-img');
+  const prevBtn = carousel.querySelector('.carousel-btn.prev');
+  const nextBtn = carousel.querySelector('.carousel-btn.next');
+  let currentIndex = 0;
 
-let currentIndex = 0;
+  function showImage(index) {
+    images.forEach((img, i) => {
+      img.classList.toggle('active', i === index);
+    });
+  }
 
-function showImage(index) {
-  carouselImages.forEach((img, i) => {
-    img.classList.remove('active');
-    if (i === index) img.classList.add('active');
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
   });
-}
 
-prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
-  showImage(currentIndex);
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  });
+
+  showImage(currentIndex); // Initialize
 });
 
-nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % carouselImages.length;
-  showImage(currentIndex);
-});
-
-showImage(currentIndex); // Initialize on load
 
 // 🌙 Dark Mode Toggle
 const toggleBtn = document.getElementById("theme-toggle");
