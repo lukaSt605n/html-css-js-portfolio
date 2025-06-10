@@ -347,6 +347,24 @@ article .icon {
   cursor: default;
 }
 
+.details-container p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.details-container a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.details-container span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
 /* PROJECTS SECTION */
 #projects {
   padding: 2rem 1rem;
